@@ -7,6 +7,7 @@ if is_cuda:
 else:
     device = torch.device("cpu")
 
+
 class DroughtNetLSTM(nn.Module):
     def __init__(
         self,
@@ -16,7 +17,7 @@ class DroughtNetLSTM(nn.Module):
         n_layers,
         ffnn_layers,
         drop_prob,
-        static_dim=0
+        static_dim=0,
     ):
         super(DroughtNetLSTM, self).__init__()
         self.output_size = output_size
@@ -32,9 +33,9 @@ class DroughtNetLSTM(nn.Module):
         )
         self.dropout = nn.Dropout(drop_prob)
         self.fflayers = []
-        for i in range(ffnn_layers-1):
+        for i in range(ffnn_layers - 1):
             if i == 0:
-                self.fflayers.append(nn.Linear(hidden_dim+static_dim, hidden_dim))
+                self.fflayers.append(nn.Linear(hidden_dim + static_dim, hidden_dim))
             else:
                 self.fflayers.append(nn.Linear(hidden_dim, hidden_dim))
         self.fflayers = nn.ModuleList(self.fflayers)
@@ -46,16 +47,16 @@ class DroughtNetLSTM(nn.Module):
         if static is not None:
             static = static.cuda().to(dtype=torch.float32)
         lstm_out, hidden = self.lstm(x, hidden)
-        lstm_out = lstm_out[:,-1,:]
-        
+        lstm_out = lstm_out[:, -1, :]
+
         out = self.dropout(lstm_out)
         for i in range(len(self.fflayers)):
             if i == 0 and static is not None:
-                out = self.fflayers[i](torch.cat((out,static), 1))
+                out = self.fflayers[i](torch.cat((out, static), 1))
             else:
                 out = self.fflayers[i](out)
         out = self.final(out)
-        
+
         out = out.view(batch_size, -1)
         return out, hidden
 

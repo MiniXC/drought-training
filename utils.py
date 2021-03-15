@@ -21,6 +21,7 @@ for dirname, _, filenames in os.walk("data"):
 
 dfs = {k: pd.read_csv(files[k]).set_index(["fips", "date"]) for k in files.keys()}
 
+
 def interpolate_nans(padata, pkind="linear"):
     """
     see: https://stackoverflow.com/a/53050216/2167159
@@ -58,7 +59,9 @@ def date_encode(date):
         np.cos(2 * np.pi * date.timetuple().tm_yday / 366),
     )
 
-cache = Cache('./dataset-cache', size_limit=int(10e9))
+
+cache = Cache("./dataset-cache", size_limit=int(10e9))
+
 
 @cache.memoize()
 def loadXY(
@@ -114,7 +117,9 @@ def loadXY(
             if use_prev_year:
                 if i < 365 or len(X[i - 365 : i + window_size - 365]) < window_size:
                     continue
-                X_time[count, :, -len(time_data_cols) :] = X[i - 365 : i + window_size - 365]
+                X_time[count, :, -len(time_data_cols) :] = X[
+                    i - 365 : i + window_size - 365
+                ]
             if not fuse_past:
                 y_past[count] = interpolate_nans(y[i : i + window_size])
             else:
@@ -132,7 +137,7 @@ def loadXY(
             y_target[count] = np.array(temp_y[~np.isnan(temp_y)][:target_size])
             X_static[count] = X_s
             count += 1
-    print(f'loaded {count} samples')
+    print(f"loaded {count} samples")
     results = [X_static[:count], X_time[:count], y_target[:count]]
     if not fuse_past:
         results.append(y_past[:count])
@@ -140,9 +145,11 @@ def loadXY(
         results.append(X_fips_date)
     return results
 
+
 scaler_dict = {}
 scaler_dict_static = {}
 scaler_dict_past = {}
+
 
 def normalize(X_static, X_time, y_past=None, fit=False):
     for index in tqdm(range(X_time.shape[-1])):
