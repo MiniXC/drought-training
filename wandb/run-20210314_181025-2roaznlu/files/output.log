@@ -1,50 +1,0 @@
-  0%|                                                                               | 0/21 [00:00<?, ?it/s]  5%|███▍                                                                   | 1/21 [00:01<00:22,  1.10s/it] 10%|██████▊                                                                | 2/21 [00:02<00:18,  1.00it/s] 14%|██████████▏                                                            | 3/21 [00:02<00:17,  1.03it/s] 19%|█████████████▌                                                         | 4/21 [00:03<00:16,  1.02it/s] 24%|████████████████▉                                                      | 5/21 [00:04<00:15,  1.03it/s] 29%|████████████████████▎                                                  | 6/21 [00:05<00:14,  1.05it/s] 33%|███████████████████████▋                                               | 7/21 [00:06<00:13,  1.07it/s] 38%|███████████████████████████                                            | 8/21 [00:07<00:12,  1.08it/s] 43%|██████████████████████████████▍                                        | 9/21 [00:08<00:11,  1.04it/s] 48%|█████████████████████████████████▎                                    | 10/21 [00:09<00:10,  1.07it/s] 52%|████████████████████████████████████▋                                 | 11/21 [00:10<00:09,  1.03it/s] 57%|████████████████████████████████████████                              | 12/21 [00:11<00:08,  1.01it/s] 62%|███████████████████████████████████████████▎                          | 13/21 [00:12<00:08,  1.01s/it] 67%|██████████████████████████████████████████████▋                       | 14/21 [00:13<00:07,  1.00s/it] 71%|██████████████████████████████████████████████████                    | 15/21 [00:14<00:06,  1.01s/it] 76%|█████████████████████████████████████████████████████▎                | 16/21 [00:15<00:05,  1.02s/it] 81%|████████████████████████████████████████████████████████▋             | 17/21 [00:16<00:04,  1.03s/it] 86%|████████████████████████████████████████████████████████████          | 18/21 [00:17<00:03,  1.03s/it] 90%|███████████████████████████████████████████████████████████████▎      | 19/21 [00:18<00:01,  1.05it/s] 95%|██████████████████████████████████████████████████████████████████▋   | 20/21 [00:19<00:00,  1.09it/s]100%|██████████████████████████████████████████████████████████████████████| 21/21 [00:20<00:00,  1.13it/s]100%|██████████████████████████████████████████████████████████████████████| 21/21 [00:20<00:00,  1.04it/s]
-  0%|                                                                               | 0/30 [00:00<?, ?it/s]100%|█████████████████████████████████████████████████████████████████████| 30/30 [00:00<00:00, 290.72it/s]100%|█████████████████████████████████████████████████████████████████████| 30/30 [00:00<00:00, 290.06it/s]
-  0%|                                                                               | 0/21 [00:00<?, ?it/s] 19%|█████████████▌                                                         | 4/21 [00:00<00:00, 32.74it/s] 38%|███████████████████████████                                            | 8/21 [00:00<00:00, 32.91it/s] 57%|████████████████████████████████████████                              | 12/21 [00:00<00:00, 32.95it/s] 76%|█████████████████████████████████████████████████████▎                | 16/21 [00:00<00:00, 32.98it/s] 95%|██████████████████████████████████████████████████████████████████▋   | 20/21 [00:00<00:00, 33.04it/s]100%|██████████████████████████████████████████████████████████████████████| 21/21 [00:00<00:00, 32.98it/s]
-  0%|                                                                               | 0/30 [00:00<?, ?it/s]100%|███████████████████████████████████████████████████████████████████| 30/30 [00:00<00:00, 10246.67it/s]
-using GPU
-epoch 1/10:   0%|                                                                  | 0/803 [00:00<?, ?it/s]epoch 1/10:   0%|                                                                  | 0/803 [00:00<?, ?it/s]
-Traceback (most recent call last):
-  File "train.py", line 165, in <module>
-    train()
-  File "/home/cdminix/anaconda3/lib/python3.7/site-packages/click/core.py", line 829, in __call__
-    return self.main(*args, **kwargs)
-  File "/home/cdminix/anaconda3/lib/python3.7/site-packages/click/core.py", line 782, in main
-    rv = self.invoke(ctx)
-  File "/home/cdminix/anaconda3/lib/python3.7/site-packages/click/core.py", line 1066, in invoke
-    return ctx.invoke(self.callback, **ctx.params)
-  File "/home/cdminix/anaconda3/lib/python3.7/site-packages/click/core.py", line 610, in invoke
-    return callback(*args, **kwargs)
-  File "train.py", line 110, in train
-    loss.backward()
-  File "/home/cdminix/anaconda3/lib/python3.7/site-packages/torch/tensor.py", line 185, in backward
-    torch.autograd.backward(self, gradient, retain_graph, create_graph)
-  File "/home/cdminix/anaconda3/lib/python3.7/site-packages/torch/autograd/__init__.py", line 127, in backward
-    allow_unreachable=True)  # allow_unreachable flag
-RuntimeError: CUDA error: CUBLAS_STATUS_ALLOC_FAILED when calling `cublasCreate(handle)`
-Exception raised from createCublasHandle at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:8 (most recent call first):
-frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x42 (0x7fc29ba5a1e2 in /home/cdminix/anaconda3/lib/python3.7/site-packages/torch/lib/libc10.so)
-frame #1: <unknown function> + 0xf09d05 (0x7fc21a359d05 in /home/cdminix/anaconda3/lib/python3.7/site-packages/torch/lib/libtorch_cuda.so)
-frame #2: at::cuda::getCurrentCUDABlasHandle() + 0xb75 (0x7fc21a35abe5 in /home/cdminix/anaconda3/lib/python3.7/site-packages/torch/lib/libtorch_cuda.so)
-frame #3: <unknown function> + 0xefcd97 (0x7fc21a34cd97 in /home/cdminix/anaconda3/lib/python3.7/site-packages/torch/lib/libtorch_cuda.so)
-frame #4: at::native::(anonymous namespace)::addmm_out_cuda_impl(at::Tensor&, at::Tensor const&, at::Tensor const&, at::Tensor const&, c10::Scalar, c10::Scalar) + 0xf15 (0x7fc21b437145 in /home/cdminix/anaconda3/lib/python3.7/site-packages/torch/lib/libtorch_cuda.so)
-frame #5: at::native::mm_cuda(at::Tensor const&, at::Tensor const&) + 0xb3 (0x7fc21b439043 in /home/cdminix/anaconda3/lib/python3.7/site-packages/torch/lib/libtorch_cuda.so)
-frame #6: <unknown function> + 0xf22a20 (0x7fc21a372a20 in /home/cdminix/anaconda3/lib/python3.7/site-packages/torch/lib/libtorch_cuda.so)
-frame #7: <unknown function> + 0xa56530 (0x7fc254aa6530 in /home/cdminix/anaconda3/lib/python3.7/site-packages/torch/lib/libtorch_cpu.so)
-frame #8: at::Tensor c10::Dispatcher::call<at::Tensor, at::Tensor const&, at::Tensor const&>(c10::TypedOperatorHandle<at::Tensor (at::Tensor const&, at::Tensor const&)> const&, at::Tensor const&, at::Tensor const&) const + 0xbc (0x7fc25528e81c in /home/cdminix/anaconda3/lib/python3.7/site-packages/torch/lib/libtorch_cpu.so)
-frame #9: at::mm(at::Tensor const&, at::Tensor const&) + 0x4b (0x7fc2551df6ab in /home/cdminix/anaconda3/lib/python3.7/site-packages/torch/lib/libtorch_cpu.so)
-frame #10: <unknown function> + 0x2ed0a2f (0x7fc256f20a2f in /home/cdminix/anaconda3/lib/python3.7/site-packages/torch/lib/libtorch_cpu.so)
-frame #11: <unknown function> + 0xa56530 (0x7fc254aa6530 in /home/cdminix/anaconda3/lib/python3.7/site-packages/torch/lib/libtorch_cpu.so)
-frame #12: at::Tensor c10::Dispatcher::call<at::Tensor, at::Tensor const&, at::Tensor const&>(c10::TypedOperatorHandle<at::Tensor (at::Tensor const&, at::Tensor const&)> const&, at::Tensor const&, at::Tensor const&) const + 0xbc (0x7fc25528e81c in /home/cdminix/anaconda3/lib/python3.7/site-packages/torch/lib/libtorch_cpu.so)
-frame #13: at::Tensor::mm(at::Tensor const&) const + 0x4b (0x7fc255374cab in /home/cdminix/anaconda3/lib/python3.7/site-packages/torch/lib/libtorch_cpu.so)
-frame #14: <unknown function> + 0x2d11c34 (0x7fc256d61c34 in /home/cdminix/anaconda3/lib/python3.7/site-packages/torch/lib/libtorch_cpu.so)
-frame #15: torch::autograd::generated::AddmmBackward::apply(std::vector<at::Tensor, std::allocator<at::Tensor> >&&) + 0x2d5 (0x7fc256d67bf5 in /home/cdminix/anaconda3/lib/python3.7/site-packages/torch/lib/libtorch_cpu.so)
-frame #16: <unknown function> + 0x3375bb7 (0x7fc2573c5bb7 in /home/cdminix/anaconda3/lib/python3.7/site-packages/torch/lib/libtorch_cpu.so)
-frame #17: torch::autograd::Engine::evaluate_function(std::shared_ptr<torch::autograd::GraphTask>&, torch::autograd::Node*, torch::autograd::InputBuffer&, std::shared_ptr<torch::autograd::ReadyQueue> const&) + 0x1400 (0x7fc2573c1400 in /home/cdminix/anaconda3/lib/python3.7/site-packages/torch/lib/libtorch_cpu.so)
-frame #18: torch::autograd::Engine::thread_main(std::shared_ptr<torch::autograd::GraphTask> const&) + 0x451 (0x7fc2573c1fa1 in /home/cdminix/anaconda3/lib/python3.7/site-packages/torch/lib/libtorch_cpu.so)
-frame #19: torch::autograd::Engine::thread_init(int, std::shared_ptr<torch::autograd::ReadyQueue> const&, bool) + 0x89 (0x7fc2573ba119 in /home/cdminix/anaconda3/lib/python3.7/site-packages/torch/lib/libtorch_cpu.so)
-frame #20: torch::autograd::python::PythonEngine::thread_init(int, std::shared_ptr<torch::autograd::ReadyQueue> const&, bool) + 0x4a (0x7fc26473edea in /home/cdminix/anaconda3/lib/python3.7/site-packages/torch/lib/libtorch_python.so)
-frame #21: <unknown function> + 0xc819d (0x7fc26f68019d in /home/cdminix/anaconda3/bin/../lib/libstdc++.so.6)
-frame #22: <unknown function> + 0x9609 (0x7fc2a1f80609 in /lib/x86_64-linux-gnu/libpthread.so.0)
-frame #23: clone + 0x43 (0x7fc2a1ea7103 in /lib/x86_64-linux-gnu/libc.so.6)
-

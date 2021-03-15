@@ -2,3 +2,4 @@ data
 dataset-cache
 *.csv
 *.pth
+wandb
