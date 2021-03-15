@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "train.py", line 175, in <module>
+    train()
+  File "/home/cdminix/anaconda3/lib/python3.7/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/cdminix/anaconda3/lib/python3.7/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/cdminix/anaconda3/lib/python3.7/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/cdminix/anaconda3/lib/python3.7/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "train.py", line 56, in train
+    fuse_past=use_past,
+NameError: name 'use_past' is not defined

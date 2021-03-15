@@ -1,0 +1,263 @@
+2021-03-14 17:17:43,026 INFO    MainThread:14940 [internal.py:wandb_internal():64] W&B internal server running at pid: 14940
+2021-03-14 17:17:43,027 DEBUG   HandlerThread:14940 [handler.py:handle_request():55] handle_request: check_version
+2021-03-14 17:17:43,028 INFO    WriterThread:14940 [datastore.py:open_for_write():77] open: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/run-34ry4esp.wandb
+2021-03-14 17:17:43,029 DEBUG   SenderThread:14940 [sender.py:send():117] send: header
+2021-03-14 17:17:43,029 DEBUG   SenderThread:14940 [sender.py:send():117] send: request
+2021-03-14 17:17:43,029 DEBUG   SenderThread:14940 [sender.py:send_request():126] send_request: check_version
+2021-03-14 17:17:43,032 DEBUG   Thread-4  :14940 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): pypi.org:443
+2021-03-14 17:17:43,131 DEBUG   Thread-4  :14940 [connectionpool.py:_make_request():461] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 55088
+2021-03-14 17:17:43,166 DEBUG   SenderThread:14940 [sender.py:send():117] send: run
+2021-03-14 17:17:43,171 DEBUG   SenderThread:14940 [git.py:repo():33] git repository is invalid
+2021-03-14 17:17:43,175 DEBUG   SenderThread:14940 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-03-14 17:17:43,451 DEBUG   SenderThread:14940 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-03-14 17:17:43,456 INFO    SenderThread:14940 [dir_watcher.py:__init__():165] watching files in: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files
+2021-03-14 17:17:43,456 INFO    SenderThread:14940 [sender.py:_start_run_threads():596] run started: 34ry4esp with start time 1615742262
+2021-03-14 17:17:43,456 DEBUG   SenderThread:14940 [sender.py:send():117] send: summary
+2021-03-14 17:17:43,457 INFO    SenderThread:14940 [sender.py:_save_file():682] saving file wandb-summary.json with policy end
+2021-03-14 17:17:43,459 DEBUG   HandlerThread:14940 [handler.py:handle_request():55] handle_request: run_start
+2021-03-14 17:17:43,462 DEBUG   HandlerThread:14940 [meta.py:__init__():34] meta init
+2021-03-14 17:17:43,463 DEBUG   HandlerThread:14940 [meta.py:__init__():48] meta init done
+2021-03-14 17:17:43,463 DEBUG   HandlerThread:14940 [meta.py:probe():190] probe
+2021-03-14 17:17:43,469 DEBUG   HandlerThread:14940 [git.py:repo():33] git repository is invalid
+2021-03-14 17:17:43,469 DEBUG   HandlerThread:14940 [meta.py:_save_pip():52] save pip
+2021-03-14 17:17:43,469 DEBUG   HandlerThread:14940 [meta.py:_save_pip():66] save pip done
+2021-03-14 17:17:43,469 DEBUG   HandlerThread:14940 [meta.py:probe():231] probe done
+2021-03-14 17:17:43,472 DEBUG   SenderThread:14940 [sender.py:send():117] send: files
+2021-03-14 17:17:43,472 INFO    SenderThread:14940 [sender.py:_save_file():682] saving file wandb-metadata.json with policy now
+2021-03-14 17:17:43,479 DEBUG   HandlerThread:14940 [handler.py:handle_request():55] handle_request: status
+2021-03-14 17:17:43,479 DEBUG   SenderThread:14940 [sender.py:send():117] send: request
+2021-03-14 17:17:43,479 DEBUG   Thread-11 :14940 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-03-14 17:17:43,479 DEBUG   SenderThread:14940 [sender.py:send_request():126] send_request: status
+2021-03-14 17:17:43,483 DEBUG   SenderThread:14940 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-03-14 17:17:43,691 DEBUG   SenderThread:14940 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-03-14 17:17:43,699 DEBUG   Thread-11 :14940 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-03-14 17:17:43,705 DEBUG   Thread-11 :14940 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-03-14 17:17:44,122 DEBUG   Thread-11 :14940 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/cdminix/drought/34ry4esp/wandb-metadata.json?Expires=1615828663&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=UTiIT5XuYAYffcKLygzGWT78qxXx2qaKExvij6PUWD2CbgaxLADtk1NAo14vVFuANkXuAg3s5Ehrokqxd1VuEI5OC%2FH4XphebXt33HbaAM0WhboyFYXQ6Qgl0cCbPmbhXHXArprJoT0l8LTjQAkbyu9O4cFu7RR1ln2b7Vkd%2FbxI8j6pmyun%2BV3ssJ1cr68Gix8ia0EPCKaABJKcQD2rkEAOmtfFXy9iMBnUd%2BRyWENhEa%2FRNqlroH7sIBKpt2Pf9GIhlvoUflfCCguG9NdtwZHTs9N%2F9iVz3Iq0hPIGrExDwbrwT722AV52XMGkHO5gOzBlsJyY8BjpDb8kGMkHoQ%3D%3D HTTP/1.1" 200 0
+2021-03-14 17:17:44,124 INFO    Thread-11 :14940 [upload_job.py:push():133] Uploaded file /tmp/tmpjsv8twsfwandb/1k8qugyn-wandb-metadata.json
+2021-03-14 17:17:44,459 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_created():213] file/dir created: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/wandb-summary.json
+2021-03-14 17:17:44,459 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_created():213] file/dir created: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:17:44,460 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_created():213] file/dir created: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/requirements.txt
+2021-03-14 17:17:44,460 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_created():213] file/dir created: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/wandb-metadata.json
+2021-03-14 17:17:45,457 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:17:45,459 DEBUG   Thread-5  :14940 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-03-14 17:17:45,767 DEBUG   Thread-5  :14940 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/cdminix/drought/34ry4esp/file_stream HTTP/1.1" 200 None
+2021-03-14 17:17:46,457 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:17:46,909 DEBUG   SenderThread:14940 [sender.py:send():117] send: stats
+2021-03-14 17:17:47,458 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:17:49,087 DEBUG   Thread-5  :14940 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/cdminix/drought/34ry4esp/file_stream HTTP/1.1" 200 None
+2021-03-14 17:17:49,459 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:17:50,460 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:17:51,430 DEBUG   SenderThread:14940 [sender.py:send():117] send: stats
+2021-03-14 17:17:51,460 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:17:51,585 DEBUG   Thread-5  :14940 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/cdminix/drought/34ry4esp/file_stream HTTP/1.1" 200 None
+2021-03-14 17:17:52,461 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:17:53,461 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:17:54,462 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:17:55,462 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:17:55,954 DEBUG   SenderThread:14940 [sender.py:send():117] send: stats
+2021-03-14 17:17:56,118 DEBUG   Thread-5  :14940 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/cdminix/drought/34ry4esp/file_stream HTTP/1.1" 200 None
+2021-03-14 17:17:56,463 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:17:57,463 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:17:58,463 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:17:58,695 DEBUG   HandlerThread:14940 [handler.py:handle_request():55] handle_request: status
+2021-03-14 17:17:58,695 DEBUG   SenderThread:14940 [sender.py:send():117] send: request
+2021-03-14 17:17:58,695 DEBUG   SenderThread:14940 [sender.py:send_request():126] send_request: status
+2021-03-14 17:17:58,698 DEBUG   SenderThread:14940 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-03-14 17:17:58,908 DEBUG   SenderThread:14940 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-03-14 17:17:59,464 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:00,464 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:00,473 DEBUG   SenderThread:14940 [sender.py:send():117] send: stats
+2021-03-14 17:18:00,626 DEBUG   Thread-5  :14940 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/cdminix/drought/34ry4esp/file_stream HTTP/1.1" 200 None
+2021-03-14 17:18:01,465 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:02,466 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:03,466 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:04,467 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:04,997 DEBUG   SenderThread:14940 [sender.py:send():117] send: stats
+2021-03-14 17:18:05,152 DEBUG   Thread-5  :14940 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/cdminix/drought/34ry4esp/file_stream HTTP/1.1" 200 None
+2021-03-14 17:18:05,467 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:06,468 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:07,469 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:07,566 DEBUG   Thread-5  :14940 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/cdminix/drought/34ry4esp/file_stream HTTP/1.1" 200 None
+2021-03-14 17:18:08,469 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:09,470 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:09,540 DEBUG   SenderThread:14940 [sender.py:send():117] send: stats
+2021-03-14 17:18:09,695 DEBUG   Thread-5  :14940 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/cdminix/drought/34ry4esp/file_stream HTTP/1.1" 200 None
+2021-03-14 17:18:10,470 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:11,470 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:12,471 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:13,471 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:13,912 DEBUG   HandlerThread:14940 [handler.py:handle_request():55] handle_request: status
+2021-03-14 17:18:13,912 DEBUG   SenderThread:14940 [sender.py:send():117] send: request
+2021-03-14 17:18:13,912 DEBUG   SenderThread:14940 [sender.py:send_request():126] send_request: status
+2021-03-14 17:18:13,915 DEBUG   SenderThread:14940 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-03-14 17:18:14,107 DEBUG   SenderThread:14940 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-03-14 17:18:14,110 DEBUG   SenderThread:14940 [sender.py:send():117] send: stats
+2021-03-14 17:18:14,336 DEBUG   Thread-5  :14940 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/cdminix/drought/34ry4esp/file_stream HTTP/1.1" 200 None
+2021-03-14 17:18:14,472 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:15,472 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:16,472 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:17,473 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:18,473 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:18,613 DEBUG   SenderThread:14940 [sender.py:send():117] send: stats
+2021-03-14 17:18:18,769 DEBUG   Thread-5  :14940 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/cdminix/drought/34ry4esp/file_stream HTTP/1.1" 200 None
+2021-03-14 17:18:19,474 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:20,474 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:21,474 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:22,475 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:23,164 DEBUG   SenderThread:14940 [sender.py:send():117] send: stats
+2021-03-14 17:18:23,314 DEBUG   Thread-5  :14940 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/cdminix/drought/34ry4esp/file_stream HTTP/1.1" 200 None
+2021-03-14 17:18:23,475 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:24,475 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:25,476 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:26,476 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:27,476 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:27,695 DEBUG   SenderThread:14940 [sender.py:send():117] send: stats
+2021-03-14 17:18:27,863 DEBUG   Thread-5  :14940 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/cdminix/drought/34ry4esp/file_stream HTTP/1.1" 200 None
+2021-03-14 17:18:28,477 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:29,111 DEBUG   HandlerThread:14940 [handler.py:handle_request():55] handle_request: status
+2021-03-14 17:18:29,111 DEBUG   SenderThread:14940 [sender.py:send():117] send: request
+2021-03-14 17:18:29,111 DEBUG   SenderThread:14940 [sender.py:send_request():126] send_request: status
+2021-03-14 17:18:29,114 DEBUG   SenderThread:14940 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-03-14 17:18:29,315 DEBUG   SenderThread:14940 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-03-14 17:18:29,477 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:30,477 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:31,478 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:32,246 DEBUG   SenderThread:14940 [sender.py:send():117] send: stats
+2021-03-14 17:18:32,464 DEBUG   Thread-5  :14940 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/cdminix/drought/34ry4esp/file_stream HTTP/1.1" 200 None
+2021-03-14 17:18:32,478 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:33,478 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:34,479 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:35,479 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:36,480 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:36,770 DEBUG   SenderThread:14940 [sender.py:send():117] send: stats
+2021-03-14 17:18:37,199 DEBUG   Thread-5  :14940 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/cdminix/drought/34ry4esp/file_stream HTTP/1.1" 200 None
+2021-03-14 17:18:37,480 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:38,480 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:39,481 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:40,481 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:41,319 DEBUG   SenderThread:14940 [sender.py:send():117] send: stats
+2021-03-14 17:18:41,470 DEBUG   Thread-5  :14940 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/cdminix/drought/34ry4esp/file_stream HTTP/1.1" 200 None
+2021-03-14 17:18:41,481 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:42,482 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:43,482 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:44,318 DEBUG   HandlerThread:14940 [handler.py:handle_request():55] handle_request: status
+2021-03-14 17:18:44,318 DEBUG   SenderThread:14940 [sender.py:send():117] send: request
+2021-03-14 17:18:44,318 DEBUG   SenderThread:14940 [sender.py:send_request():126] send_request: status
+2021-03-14 17:18:44,321 DEBUG   SenderThread:14940 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-03-14 17:18:44,482 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:44,530 DEBUG   SenderThread:14940 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-03-14 17:18:45,482 INFO    Thread-8  :14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:45,846 DEBUG   SenderThread:14940 [sender.py:send():117] send: stats
+2021-03-14 17:18:47,926 DEBUG   SenderThread:14940 [sender.py:send():117] send: telemetry
+2021-03-14 17:18:47,933 DEBUG   HandlerThread:14940 [handler.py:handle_request():55] handle_request: poll_exit
+2021-03-14 17:18:47,933 DEBUG   SenderThread:14940 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-03-14 17:18:48,152 DEBUG   SenderThread:14940 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-03-14 17:18:48,157 DEBUG   SenderThread:14940 [sender.py:send():117] send: exit
+2021-03-14 17:18:48,157 INFO    SenderThread:14940 [sender.py:send_exit():195] handling exit code: 1
+2021-03-14 17:18:48,157 INFO    SenderThread:14940 [sender.py:send_exit():203] send defer
+2021-03-14 17:18:48,157 DEBUG   SenderThread:14940 [sender.py:send():117] send: request
+2021-03-14 17:18:48,158 DEBUG   SenderThread:14940 [sender.py:send_request():126] send_request: poll_exit
+2021-03-14 17:18:48,158 DEBUG   HandlerThread:14940 [handler.py:handle_request():55] handle_request: defer
+2021-03-14 17:18:48,158 INFO    HandlerThread:14940 [handler.py:handle_request_defer():69] handle defer: 0
+2021-03-14 17:18:48,158 DEBUG   SenderThread:14940 [sender.py:send():117] send: request
+2021-03-14 17:18:48,159 DEBUG   SenderThread:14940 [sender.py:send_request():126] send_request: defer
+2021-03-14 17:18:48,159 INFO    SenderThread:14940 [sender.py:send_request_defer():212] handle sender defer: 0
+2021-03-14 17:18:48,159 INFO    SenderThread:14940 [sender.py:send_request_defer():248] send defer: 1
+2021-03-14 17:18:48,159 DEBUG   HandlerThread:14940 [handler.py:handle_request():55] handle_request: defer
+2021-03-14 17:18:48,159 INFO    HandlerThread:14940 [handler.py:handle_request_defer():69] handle defer: 1
+2021-03-14 17:18:48,230 DEBUG   SenderThread:14940 [sender.py:send():117] send: request
+2021-03-14 17:18:48,230 DEBUG   SenderThread:14940 [sender.py:send_request():126] send_request: defer
+2021-03-14 17:18:48,230 INFO    SenderThread:14940 [sender.py:send_request_defer():212] handle sender defer: 1
+2021-03-14 17:18:48,230 INFO    SenderThread:14940 [sender.py:send_request_defer():248] send defer: 2
+2021-03-14 17:18:48,230 DEBUG   SenderThread:14940 [sender.py:send():117] send: stats
+2021-03-14 17:18:48,231 DEBUG   HandlerThread:14940 [handler.py:handle_request():55] handle_request: defer
+2021-03-14 17:18:48,231 INFO    HandlerThread:14940 [handler.py:handle_request_defer():69] handle defer: 2
+2021-03-14 17:18:48,231 DEBUG   SenderThread:14940 [sender.py:send():117] send: request
+2021-03-14 17:18:48,231 DEBUG   SenderThread:14940 [sender.py:send_request():126] send_request: defer
+2021-03-14 17:18:48,231 INFO    SenderThread:14940 [sender.py:send_request_defer():212] handle sender defer: 2
+2021-03-14 17:18:48,231 INFO    SenderThread:14940 [sender.py:send_request_defer():248] send defer: 3
+2021-03-14 17:18:48,231 DEBUG   HandlerThread:14940 [handler.py:handle_request():55] handle_request: defer
+2021-03-14 17:18:48,231 INFO    HandlerThread:14940 [handler.py:handle_request_defer():69] handle defer: 3
+2021-03-14 17:18:48,232 DEBUG   SenderThread:14940 [sender.py:send():117] send: summary
+2021-03-14 17:18:48,232 INFO    SenderThread:14940 [sender.py:_save_file():682] saving file wandb-summary.json with policy end
+2021-03-14 17:18:48,232 DEBUG   SenderThread:14940 [sender.py:send():117] send: request
+2021-03-14 17:18:48,232 DEBUG   SenderThread:14940 [sender.py:send_request():126] send_request: defer
+2021-03-14 17:18:48,232 INFO    SenderThread:14940 [sender.py:send_request_defer():212] handle sender defer: 3
+2021-03-14 17:18:48,232 INFO    SenderThread:14940 [sender.py:send_request_defer():248] send defer: 4
+2021-03-14 17:18:48,232 DEBUG   HandlerThread:14940 [handler.py:handle_request():55] handle_request: defer
+2021-03-14 17:18:48,232 INFO    HandlerThread:14940 [handler.py:handle_request_defer():69] handle defer: 4
+2021-03-14 17:18:48,232 DEBUG   SenderThread:14940 [sender.py:send():117] send: request
+2021-03-14 17:18:48,233 DEBUG   SenderThread:14940 [sender.py:send_request():126] send_request: defer
+2021-03-14 17:18:48,233 INFO    SenderThread:14940 [sender.py:send_request_defer():212] handle sender defer: 4
+2021-03-14 17:18:48,233 INFO    SenderThread:14940 [dir_watcher.py:finish():279] shutting down directory watcher
+2021-03-14 17:18:48,483 INFO    SenderThread:14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/wandb-summary.json
+2021-03-14 17:18:48,484 INFO    SenderThread:14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/config.yaml
+2021-03-14 17:18:48,484 INFO    SenderThread:14940 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:48,484 INFO    SenderThread:14940 [dir_watcher.py:finish():309] scan: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files
+2021-03-14 17:18:48,484 INFO    SenderThread:14940 [dir_watcher.py:finish():315] scan save: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/wandb-summary.json wandb-summary.json
+2021-03-14 17:18:48,485 INFO    SenderThread:14940 [dir_watcher.py:finish():315] scan save: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/requirements.txt requirements.txt
+2021-03-14 17:18:48,485 INFO    SenderThread:14940 [dir_watcher.py:finish():315] scan save: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log output.log
+2021-03-14 17:18:48,490 DEBUG   Thread-12 :14940 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-03-14 17:18:48,490 INFO    SenderThread:14940 [dir_watcher.py:finish():315] scan save: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/wandb-metadata.json wandb-metadata.json
+2021-03-14 17:18:48,495 DEBUG   Thread-13 :14940 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-03-14 17:18:48,495 INFO    SenderThread:14940 [dir_watcher.py:finish():315] scan save: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/config.yaml config.yaml
+2021-03-14 17:18:48,500 DEBUG   Thread-14 :14940 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-03-14 17:18:48,500 INFO    SenderThread:14940 [sender.py:send_request_defer():248] send defer: 5
+2021-03-14 17:18:48,501 DEBUG   HandlerThread:14940 [handler.py:handle_request():55] handle_request: defer
+2021-03-14 17:18:48,505 INFO    HandlerThread:14940 [handler.py:handle_request_defer():69] handle defer: 5
+2021-03-14 17:18:48,505 DEBUG   Thread-15 :14940 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-03-14 17:18:48,505 DEBUG   SenderThread:14940 [sender.py:send():117] send: request
+2021-03-14 17:18:48,505 DEBUG   SenderThread:14940 [sender.py:send_request():126] send_request: defer
+2021-03-14 17:18:48,506 INFO    SenderThread:14940 [sender.py:send_request_defer():212] handle sender defer: 5
+2021-03-14 17:18:48,506 INFO    SenderThread:14940 [file_pusher.py:finish():174] shutting down file pusher
+2021-03-14 17:18:48,506 INFO    SenderThread:14940 [sender.py:send_request_defer():248] send defer: 6
+2021-03-14 17:18:48,506 DEBUG   HandlerThread:14940 [handler.py:handle_request():55] handle_request: defer
+2021-03-14 17:18:48,506 INFO    HandlerThread:14940 [handler.py:handle_request_defer():69] handle defer: 6
+2021-03-14 17:18:48,506 DEBUG   SenderThread:14940 [sender.py:send():117] send: request
+2021-03-14 17:18:48,506 DEBUG   SenderThread:14940 [sender.py:send_request():126] send_request: defer
+2021-03-14 17:18:48,506 INFO    SenderThread:14940 [sender.py:send_request_defer():212] handle sender defer: 6
+2021-03-14 17:18:48,662 DEBUG   Thread-5  :14940 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/cdminix/drought/34ry4esp/file_stream HTTP/1.1" 200 None
+2021-03-14 17:18:48,715 DEBUG   Thread-15 :14940 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-03-14 17:18:48,720 DEBUG   Thread-15 :14940 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-03-14 17:18:48,725 DEBUG   Thread-14 :14940 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-03-14 17:18:48,726 DEBUG   Thread-13 :14940 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-03-14 17:18:48,735 DEBUG   Thread-14 :14940 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-03-14 17:18:48,736 DEBUG   Thread-13 :14940 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-03-14 17:18:48,805 DEBUG   Thread-5  :14940 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/cdminix/drought/34ry4esp/file_stream HTTP/1.1" 200 None
+2021-03-14 17:18:48,807 INFO    SenderThread:14940 [sender.py:send_request_defer():248] send defer: 7
+2021-03-14 17:18:48,807 DEBUG   HandlerThread:14940 [handler.py:handle_request():55] handle_request: defer
+2021-03-14 17:18:48,807 INFO    HandlerThread:14940 [handler.py:handle_request_defer():69] handle defer: 7
+2021-03-14 17:18:48,807 DEBUG   SenderThread:14940 [sender.py:send():117] send: request
+2021-03-14 17:18:48,808 DEBUG   SenderThread:14940 [sender.py:send_request():126] send_request: defer
+2021-03-14 17:18:48,808 INFO    SenderThread:14940 [sender.py:send_request_defer():212] handle sender defer: 7
+2021-03-14 17:18:48,808 INFO    SenderThread:14940 [sender.py:send_request_defer():248] send defer: 8
+2021-03-14 17:18:48,808 DEBUG   SenderThread:14940 [sender.py:send():117] send: final
+2021-03-14 17:18:48,808 DEBUG   SenderThread:14940 [sender.py:send():117] send: footer
+2021-03-14 17:18:48,808 DEBUG   HandlerThread:14940 [handler.py:handle_request():55] handle_request: defer
+2021-03-14 17:18:48,809 INFO    HandlerThread:14940 [handler.py:handle_request_defer():69] handle defer: 8
+2021-03-14 17:18:48,809 DEBUG   SenderThread:14940 [sender.py:send():117] send: request
+2021-03-14 17:18:48,809 DEBUG   SenderThread:14940 [sender.py:send_request():126] send_request: defer
+2021-03-14 17:18:48,809 INFO    SenderThread:14940 [sender.py:send_request_defer():212] handle sender defer: 8
+2021-03-14 17:18:49,093 DEBUG   Thread-15 :14940 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/cdminix/drought/34ry4esp/config.yaml?Expires=1615828728&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=nOMLlkR8Z%2F8%2FtkslbQHXEixVEmgnqyrQ9pVTggeyFRTfwUl6PMQtsiDg1h9dcx3sDPzio4NGcR%2FrFY1iRwHWriVZFpdc2s6u02wTSwn1FSIVzWSiH%2BpR920rA09Qtr4ZbyZZKfA5UQH7PmEhfSj%2F3en3XCdytd17aE%2BC%2FJA0d2WrYn95lOWpRyRVkrsExJpVXE9xv8wfYavpyFWPNmB8qeJ68rBfX3MFSf4WlVE6Ya%2FGs4IprSr9uXCsTQCHBnNqTiBVMVsKoZb%2Bf8XqJiaDziyCRPQf%2FExALNOVQvnesc%2F6XZtfBymYCYxgjCDfTQQsnIFISb%2BJuZR3TacZ9kFWMA%3D%3D HTTP/1.1" 200 0
+2021-03-14 17:18:49,095 INFO    Thread-15 :14940 [upload_job.py:push():133] Uploaded file /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/config.yaml
+2021-03-14 17:18:49,109 DEBUG   Thread-13 :14940 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/cdminix/drought/34ry4esp/requirements.txt?Expires=1615828728&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=higqmdvUKC4Pom9lkG7ZkvPaDErCPFY3zbCHsf0ToD00msHR3n3%2B3HpS3HBPZx3RjICJWmgMnU6Z%2FafuqegMb5AWg9rOniJbYdobWnQ4z1y1Pc7v1mKR5SgrNajYCIs%2BBC1EYNxYllOPJfKwHir1hNs9zR3jJqbr6u%2BpakLJKvSrbLyn5D9xeXOQ%2F6PTGCPNnmWPe%2B2sGUJ7wkpvCTR1JybkNq0oOdVhGNkiICJM3TZ6jy7cHaMLpNTPJBGtIxldVgfswJWbM962C1fORWl1iivyWv1SC8x8HMDrFK8V7AVwWcO8dEAfrR%2FNDgiC6ip9HXcQDLO6lvrcuCdrffeeQg%3D%3D HTTP/1.1" 200 0
+2021-03-14 17:18:49,110 INFO    Thread-13 :14940 [upload_job.py:push():133] Uploaded file /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/requirements.txt
+2021-03-14 17:18:49,154 DEBUG   Thread-14 :14940 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/cdminix/drought/34ry4esp/output.log?Expires=1615828728&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=hhWGlB%2Fjl2DAAwlE5S8WI%2FcNLqyIDZ4Q5JWMmU2QO4w22sKMO0DQ5IAI6sf6ntPPoPZJc4GAn20q%2BIiz8bNwQPGJvePLD21Pqcz2wjCXKskKI7yGLpSm2lV2TFKUhZunbPYK8zMb1%2BE3bJnbNT4nhQipwAsgUSIxGvAE0AeGC0Y4BB1JO2gOOlIaJHaJ1N2Os2muhS%2Fh7eqE0Jzbm79JO0BhuBwUt85GRkn2ATXlNzVaAE4rDfFIrYWq1oFmEu2rq8GA5RXJBxz%2FoaKIUbQUilPYS8CnsAvdHPwpkmI1IGllypxnqXkWOzH4X5pScsQHdn4pxMoEjLGcw2L6ozg7Vw%3D%3D HTTP/1.1" 200 0
+2021-03-14 17:18:49,156 INFO    Thread-14 :14940 [upload_job.py:push():133] Uploaded file /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/output.log
+2021-03-14 17:18:49,162 DEBUG   Thread-12 :14940 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-03-14 17:18:49,168 DEBUG   Thread-12 :14940 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-03-14 17:18:49,534 DEBUG   Thread-12 :14940 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/cdminix/drought/34ry4esp/wandb-summary.json?Expires=1615828729&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=el4JFjFGwvPzYq141Zr27xB%2BkrpW5uRizCmimRlGmUxqF4cxuCWcZ0lOUQV5zY%2B%2BYbmQgNWhJvX0ipHA6B3wV9YGytYjCMy7FB%2FcM42DNyNyGvmt891kKApU9jWUmcPGlIgIEty4s7%2Fh8WijuYUhQ%2BFb3RUpQMRx6VQ5%2FnaRNRc4zhUsb%2BBCtHwViju0fyzE6YGk1lE8ToBFqvo1dAv8b12%2BU%2FdJ4qLKl76qisDvn6FsneMJ0%2BP2wRm8S8k6eUIjYOXedkkizoahmxR2i55yMU4rbaCXeHe%2FEKFM7IOg8ZOcGAAsYqkY2vtgenmG3sdgxADRFMd32TonuKIQtgZ%2BUA%3D%3D HTTP/1.1" 200 0
+2021-03-14 17:18:49,535 INFO    Thread-12 :14940 [upload_job.py:push():133] Uploaded file /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/files/wandb-summary.json
+2021-03-14 17:18:50,161 DEBUG   HandlerThread:14940 [handler.py:handle_request():55] handle_request: poll_exit
+2021-03-14 17:18:50,162 DEBUG   SenderThread:14940 [sender.py:send():117] send: request
+2021-03-14 17:18:50,162 DEBUG   SenderThread:14940 [sender.py:send_request():126] send_request: poll_exit
+2021-03-14 17:18:50,162 INFO    SenderThread:14940 [file_pusher.py:join():179] waiting for file pusher
+2021-03-14 17:18:50,163 DEBUG   HandlerThread:14940 [handler.py:handle_request():55] handle_request: get_summary
+2021-03-14 17:18:50,163 DEBUG   HandlerThread:14940 [handler.py:handle_request():55] handle_request: sampled_history
+2021-03-14 17:18:50,164 DEBUG   HandlerThread:14940 [handler.py:handle_request():55] handle_request: shutdown
+2021-03-14 17:18:50,164 INFO    HandlerThread:14940 [handler.py:finish():274] shutting down handler
+2021-03-14 17:18:50,809 INFO    WriterThread:14940 [datastore.py:close():258] close: /home/cdminix/Documents/MLP/drought/wandb/run-20210314_171742-34ry4esp/run-34ry4esp.wandb
+2021-03-14 17:18:51,162 INFO    SenderThread:14940 [sender.py:finish():756] shutting down sender
+2021-03-14 17:18:51,162 INFO    SenderThread:14940 [file_pusher.py:finish():174] shutting down file pusher
+2021-03-14 17:18:51,162 INFO    SenderThread:14940 [file_pusher.py:join():179] waiting for file pusher
+2021-03-14 17:18:51,163 INFO    MainThread:14940 [internal.py:handle_exit():139] Internal process exited

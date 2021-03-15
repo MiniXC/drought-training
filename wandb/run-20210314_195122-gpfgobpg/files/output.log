@@ -1,0 +1,141 @@
+  0%|                                                                               | 0/21 [00:00<?, ?it/s] 10%|██████▊                                                                | 2/21 [00:00<00:01, 12.35it/s] 19%|█████████████▌                                                         | 4/21 [00:00<00:01, 12.79it/s] 29%|████████████████████▎                                                  | 6/21 [00:00<00:01, 12.69it/s] 38%|███████████████████████████                                            | 8/21 [00:00<00:01, 12.57it/s] 48%|█████████████████████████████████▎                                    | 10/21 [00:00<00:00, 12.46it/s] 57%|████████████████████████████████████████                              | 12/21 [00:00<00:00, 12.44it/s] 67%|██████████████████████████████████████████████▋                       | 14/21 [00:01<00:00, 12.16it/s] 76%|█████████████████████████████████████████████████████▎                | 16/21 [00:01<00:00, 12.18it/s] 86%|████████████████████████████████████████████████████████████          | 18/21 [00:01<00:00, 12.02it/s] 95%|██████████████████████████████████████████████████████████████████▋   | 20/21 [00:01<00:00, 12.98it/s]100%|██████████████████████████████████████████████████████████████████████| 21/21 [00:01<00:00, 12.66it/s]
+  0%|                                                                               | 0/30 [00:00<?, ?it/s]100%|████████████████████████████████████████████████████████████████████| 30/30 [00:00<00:00, 1673.70it/s]
+  0%|                                                                               | 0/21 [00:00<?, ?it/s] 19%|█████████████▌                                                         | 4/21 [00:00<00:00, 32.88it/s] 38%|███████████████████████████                                            | 8/21 [00:00<00:00, 32.89it/s] 57%|████████████████████████████████████████                              | 12/21 [00:00<00:00, 32.99it/s] 76%|█████████████████████████████████████████████████████▎                | 16/21 [00:00<00:00, 32.97it/s] 95%|██████████████████████████████████████████████████████████████████▋   | 20/21 [00:00<00:00, 32.88it/s]100%|██████████████████████████████████████████████████████████████████████| 21/21 [00:00<00:00, 32.89it/s]
+  0%|                                                                               | 0/30 [00:00<?, ?it/s]100%|████████████████████████████████████████████████████████████████████| 30/30 [00:00<00:00, 9665.78it/s]
+using GPU
+epoch 1/1:   0%|                                                                    | 0/63 [00:00<?, ?it/s]torch.Size([128, 6])
+epoch 1/1:   2%|▉                                                           | 1/63 [00:00<00:07,  8.84it/s]torch.Size([128, 6])
+torch.Size([128, 6])
+epoch 1/1:   5%|██▊                                                         | 3/63 [00:00<00:05, 10.54it/s]torch.Size([128, 6])
+torch.Size([128, 6])
+epoch 1/1:   8%|████▊                                                       | 5/63 [00:00<00:05, 11.17it/s]torch.Size([128, 6])
+torch.Size([128, 6])
+epoch 1/1:  11%|██████▋                                                     | 7/63 [00:00<00:04, 11.45it/s]torch.Size([128, 6])
+torch.Size([128, 6])
+epoch 1/1:  14%|████████▌                                                   | 9/63 [00:00<00:04, 11.52it/s]torch.Size([128, 6])
+torch.Size([128, 6])
+epoch 1/1:  17%|██████████▎                                                | 11/63 [00:00<00:04, 11.66it/s]torch.Size([128, 6])
+torch.Size([128, 6])
+epoch 1/1:  21%|████████████▏                                              | 13/63 [00:01<00:04, 11.71it/s]torch.Size([128, 6])
+torch.Size([128, 6])
+epoch 1/1:  24%|██████████████                                             | 15/63 [00:01<00:04, 11.73it/s]torch.Size([128, 6])
+torch.Size([128, 6])
+epoch 1/1:  27%|███████████████▉                                           | 17/63 [00:01<00:03, 11.74it/s]torch.Size([128, 6])
+torch.Size([128, 6])
+epoch 1/1:  30%|█████████████████▊                                         | 19/63 [00:01<00:03, 11.71it/s]torch.Size([128, 6])
+torch.Size([128, 6])
+epoch 1/1:  33%|███████████████████▋                                       | 21/63 [00:01<00:03, 11.72it/s]torch.Size([128, 6])
+torch.Size([128, 6])
+epoch 1/1:  37%|█████████████████████▌                                     | 23/63 [00:01<00:03, 11.67it/s]torch.Size([128, 6])
+torch.Size([128, 6])
+epoch 1/1:  40%|███████████████████████▍                                   | 25/63 [00:02<00:03, 11.71it/s]torch.Size([128, 6])
+torch.Size([128, 6])
+epoch 1/1:  43%|█████████████████████████▎                                 | 27/63 [00:02<00:03, 11.68it/s]torch.Size([128, 6])
+torch.Size([128, 6])
+epoch 1/1:  46%|███████████████████████████▏                               | 29/63 [00:02<00:02, 11.71it/s]torch.Size([128, 6])
+torch.Size([128, 6])
+epoch 1/1:  49%|█████████████████████████████                              | 31/63 [00:02<00:02, 11.71it/s]torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([128, 6])
+torch.Size([108, 6])
+epoch 1/1:  49%|█████████████████████████████                              | 31/63 [00:08<00:08,  3.60it/s]
+Traceback (most recent call last):
+  File "train.py", line 246, in <module>
+    train()
+  File "/home/cdminix/anaconda3/lib/python3.7/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/cdminix/anaconda3/lib/python3.7/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/cdminix/anaconda3/lib/python3.7/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/cdminix/anaconda3/lib/python3.7/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "train.py", line 169, in train
+    log_dict[f'{w}macro_f1'] = f1_score(labels, preds, average='macro')
+  File "/home/cdminix/anaconda3/lib/python3.7/site-packages/sklearn/utils/validation.py", line 72, in inner_f
+    return f(**kwargs)
+  File "/home/cdminix/anaconda3/lib/python3.7/site-packages/sklearn/metrics/_classification.py", line 1047, in f1_score
+    zero_division=zero_division)
+  File "/home/cdminix/anaconda3/lib/python3.7/site-packages/sklearn/utils/validation.py", line 72, in inner_f
+    return f(**kwargs)
+  File "/home/cdminix/anaconda3/lib/python3.7/site-packages/sklearn/metrics/_classification.py", line 1175, in fbeta_score
+    zero_division=zero_division)
+  File "/home/cdminix/anaconda3/lib/python3.7/site-packages/sklearn/utils/validation.py", line 72, in inner_f
+    return f(**kwargs)
+  File "/home/cdminix/anaconda3/lib/python3.7/site-packages/sklearn/metrics/_classification.py", line 1434, in precision_recall_fscore_support
+    pos_label)
+  File "/home/cdminix/anaconda3/lib/python3.7/site-packages/sklearn/metrics/_classification.py", line 1250, in _check_set_wise_labels
+    y_type, y_true, y_pred = _check_targets(y_true, y_pred)
+  File "/home/cdminix/anaconda3/lib/python3.7/site-packages/sklearn/metrics/_classification.py", line 91, in _check_targets
+    "and {1} targets".format(type_true, type_pred))
+ValueError: Classification metrics can't handle a mix of multiclass-multioutput and multilabel-indicator targets

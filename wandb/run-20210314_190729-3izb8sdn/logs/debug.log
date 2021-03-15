@@ -1,0 +1,62 @@
+2021-03-14 19:07:29,111 INFO    MainThread:23542 [wandb_setup.py:_flush():70] setting env: {}
+2021-03-14 19:07:29,112 INFO    MainThread:23542 [wandb_setup.py:_flush():70] multiprocessing start_methods=fork,spawn,forkserver
+2021-03-14 19:07:29,112 INFO    MainThread:23542 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-03-14 19:07:29,112 INFO    MainThread:23542 [wandb_init.py:_log_setup():318] Logging user logs to /home/cdminix/Documents/MLP/drought/wandb/run-20210314_190729-3izb8sdn/logs/debug.log
+2021-03-14 19:07:29,112 INFO    MainThread:23542 [wandb_init.py:_log_setup():319] Logging internal logs to /home/cdminix/Documents/MLP/drought/wandb/run-20210314_190729-3izb8sdn/logs/debug-internal.log
+2021-03-14 19:07:30,085 INFO    MainThread:23542 [wandb_run.py:_console_start():1396] atexit reg
+2021-03-14 19:07:30,086 INFO    MainThread:23542 [wandb_run.py:_redirect():1259] redirect: SettingsConsole.REDIRECT
+2021-03-14 19:07:30,086 INFO    MainThread:23542 [wandb_run.py:_redirect():1264] Redirecting console.
+2021-03-14 19:07:30,086 INFO    MainThread:23542 [redirect.py:install():213] install start
+2021-03-14 19:07:30,086 INFO    MainThread:23542 [redirect.py:install():228] install stop
+2021-03-14 19:07:30,087 INFO    MainThread:23542 [redirect.py:install():213] install start
+2021-03-14 19:07:30,087 INFO    MainThread:23542 [redirect.py:install():228] install stop
+2021-03-14 19:07:30,087 INFO    MainThread:23542 [wandb_run.py:_redirect():1310] Redirects installed.
+2021-03-14 19:10:13,929 INFO    MainThread:23542 [wandb_run.py:_atexit_cleanup():1366] got exitcode: 1
+2021-03-14 19:10:13,932 INFO    MainThread:23542 [wandb_run.py:_restore():1338] restore
+2021-03-14 19:10:13,932 INFO    MainThread:23542 [redirect.py:uninstall():232] uninstall start
+2021-03-14 19:10:13,932 INFO    MainThread:23542 [redirect.py:_stop():287] _stop: stdout
+2021-03-14 19:10:13,932 INFO    MainThread:23542 [redirect.py:_stop():293] _stop closed: stdout
+2021-03-14 19:10:13,932 INFO    stdout    :23542 [redirect.py:_pipe_relay():129] relay done saw last write: stdout
+2021-03-14 19:10:13,932 INFO    stdout    :23542 [redirect.py:_pipe_relay():145] relay done done: stdout
+2021-03-14 19:10:13,932 INFO    MainThread:23542 [redirect.py:_stop():299] _stop joined: stdout
+2021-03-14 19:10:13,932 INFO    MainThread:23542 [redirect.py:_stop():301] _stop rd closed: stdout
+2021-03-14 19:10:13,932 INFO    MainThread:23542 [redirect.py:uninstall():236] uninstall done
+2021-03-14 19:10:13,932 INFO    MainThread:23542 [redirect.py:uninstall():232] uninstall start
+2021-03-14 19:10:13,932 INFO    MainThread:23542 [redirect.py:_stop():287] _stop: stderr
+2021-03-14 19:10:13,932 INFO    MainThread:23542 [redirect.py:_stop():293] _stop closed: stderr
+2021-03-14 19:10:13,932 INFO    stderr    :23542 [redirect.py:_pipe_relay():129] relay done saw last write: stderr
+2021-03-14 19:10:13,933 INFO    stderr    :23542 [redirect.py:_pipe_relay():145] relay done done: stderr
+2021-03-14 19:10:13,933 INFO    MainThread:23542 [redirect.py:_stop():299] _stop joined: stderr
+2021-03-14 19:10:13,933 INFO    MainThread:23542 [redirect.py:_stop():301] _stop rd closed: stderr
+2021-03-14 19:10:13,933 INFO    MainThread:23542 [redirect.py:uninstall():236] uninstall done
+2021-03-14 19:10:14,171 INFO    MainThread:23542 [wandb_run.py:_wait_for_finish():1489] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 580
+  total_bytes: 580
+}
+
+2021-03-14 19:10:16,175 INFO    MainThread:23542 [wandb_run.py:_wait_for_finish():1489] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 139695
+  total_bytes: 139695
+}
+
+2021-03-14 19:10:18,181 INFO    MainThread:23542 [wandb_run.py:_wait_for_finish():1489] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 139695
+  total_bytes: 139695
+}
+
+2021-03-14 19:10:19,261 INFO    MainThread:23542 [wandb_run.py:_show_summary():1644] rendering summary
+2021-03-14 19:10:19,262 INFO    MainThread:23542 [wandb_run.py:_show_history():1682] rendering history
+2021-03-14 19:10:19,262 INFO    MainThread:23542 [wandb_run.py:_show_files():1711] logging synced files
+2021-03-14 19:10:19,264 INFO    MainThread:23542 [internal.py:handle_exit():139] Internal process exited

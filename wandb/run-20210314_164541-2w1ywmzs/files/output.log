@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "train.py", line 170, in <module>
+    train()
+  File "/home/cdminix/anaconda3/lib/python3.7/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/cdminix/anaconda3/lib/python3.7/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/cdminix/anaconda3/lib/python3.7/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/cdminix/anaconda3/lib/python3.7/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "train.py", line 53, in train
+    use_prev_year=use_previous_year
+  File "/home/cdminix/anaconda3/lib/python3.7/site-packages/diskcache/core.py", line 1885, in wrapper
+    result = self.get(key, default=ENOVAL, retry=True)
+  File "/home/cdminix/anaconda3/lib/python3.7/site-packages/diskcache/core.py", line 1190, in get
+    rows = self._sql(select, (db_key, raw, time.time())).fetchall()
+OverflowError: BLOB longer than INT_MAX bytes
