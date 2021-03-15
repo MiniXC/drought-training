@@ -9,7 +9,6 @@ from torch.utils.data import DataLoader, random_split
 from tqdm import tqdm
 import seaborn as sns
 
-
 sys.path.append("./ts_transformer")
 
 from tst import Transformer
@@ -25,10 +24,18 @@ from src.visualization import (
     plot_visual_sample,
 )
 
-
 class DroughtTransformer:
+
     def __init__(
-        self, BATCH_SIZE, LR, EPOCHS, dropout, d_model, d_input, d_output, ALPHA
+        self,
+        BATCH_SIZE,
+        LR,
+        EPOCHS,
+        dropout,
+        d_model,
+        d_input,
+        d_output,
+        ALPHA
     ):
 
         # Training parameters
@@ -66,6 +73,12 @@ class DroughtTransformer:
             chunk_mode=chunk_mode,
             pe=pe,
         ).to(device)
+        
+        sef.load_network(d_model, d_input, d_output, ALPHA, LR, dropout)
+
+    def load_network(d_model, d_input, d_output, ALPHA, LR, dropout):
+        # Load transformer with Adam optimizer and MSE loss function
+        self.net = Transformer(d_input, d_model, d_output, q, v, h, N, attention_size=attention_size, dropout=dropout, chunk_mode=chunk_mode, pe=pe).to(device)
         self.optimizer = optim.Adam(net.parameters(), lr=LR)
         self.loss_function = OZELoss(alpha=ALPHA)
 
@@ -90,12 +103,14 @@ class DroughtTransformer:
                 total=len(dataloader_train.dataset),
                 desc=f"[Epoch {idx_epoch+1:3d}/{self.EPOCHS}]",
             ) as pbar:
+            with tqdm(total=len(dataloader_train.dataset), desc=f"[Epoch {idx_epoch+1:3d}/{self.EPOCHS}]") as pbar:
 
                 for idx_batch, (x, y) in enumerate(dataloader_train):
                     self.optimizer.zero_grad()
                     # Propagate input
                     netout = self.net(x.float().to(device))
                     y = y[:, :, np.newaxis]
+                    y = y[:,:,np.newaxis]
                     # Comupte loss
                     loss = self.loss_function(y.float().to(device), netout)
                     # Backpropage loss
@@ -116,6 +131,18 @@ class DroughtTransformer:
                 if val_loss < val_loss_best:
                     val_loss_best = val_loss
                     print("Saving")
+                    pbar.set_postfix({'loss': running_loss/(idx_batch+1)})
+                    pbar.update(x.shape[0])
+
+
+                train_loss = running_loss/len(dataloader_train)
+                val_loss = src.utils.compute_loss(self.net, dataloader_val, self.loss_function, self.device).item()
+                pbar.set_postfix({'loss': train_loss, 'val_loss': val_loss})
+
+                print ("COMPARING LOSS")
+                if val_loss < val_loss_best:
+                    val_loss_best = val_loss
+                    print ("Saving")
                     torch.save(net.state_dict(), model_save_path)
 
         print(f"model exported to {model_save_path} with loss {val_loss_best:5f}")
